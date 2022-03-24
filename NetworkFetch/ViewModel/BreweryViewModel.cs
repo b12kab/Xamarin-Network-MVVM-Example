@@ -23,7 +23,7 @@ namespace NetworkFetch.ViewModel
             FetchCommand = new Command(async () => await GetData());
             //LocationList = new RangeObservableCollection<Brewery>();
             LocationList = new ObservableCollection<Brewery>();
-            RowCount = 0;
+            //RowCount = 0;
             State = "ohio";
             Info = "Press 'next page' to start";
         }
@@ -41,7 +41,7 @@ namespace NetworkFetch.ViewModel
                 //LocationList.InsertRange(LocationList.Count, result);
                 AddRange(result);
 
-                RowCount = LocationList.Count;
+                //RowCount = LocationList.Count;
                 if (result.Count == 0)
                 {
                     hasData = false;
@@ -79,16 +79,16 @@ namespace NetworkFetch.ViewModel
             }
         }
 
-        private int count;
-        public int RowCount
-        {
-            get => count;
-            set
-            {
-                count = value;
-                NotifyPropertyChanged("RowCount");
-            }
-        }
+        //private int count;
+        //public int RowCount
+        //{
+        //    get => count;
+        //    set
+        //    {
+        //        count = value;
+        //        NotifyPropertyChanged("RowCount");
+        //    }
+        //}
 
         // https://stackoverflow.com/questions/670577/observablecollection-doesnt-support-addrange-method-so-i-get-notified-for-each
         //private RangeObservableCollection<Brewery> _locationList;
