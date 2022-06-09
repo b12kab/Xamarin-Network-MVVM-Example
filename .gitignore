@@ -96,6 +96,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 NetworkFetch.iOS/obj/
+NetworkFetch.Android/obj/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
